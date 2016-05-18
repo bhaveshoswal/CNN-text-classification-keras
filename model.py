@@ -15,9 +15,9 @@ X_train, X_test, y_train, y_test = train_test_split( x, y, test_size=0.2, random
 
 sequence_length = x.shape[1]
 vocabulary_size = len(vocabulary_inv)
-embedding_dim = 128
+embedding_dim = 256
 filter_sizes = [3,4,5]
-num_filters = 256
+num_filters = 512
 drop = 0.5
 
 nb_epoch = 100
