@@ -6,7 +6,7 @@ from collections import Counter
 
 def clean_str(string):
     """
-    Tokenization/string cleaning for all datasets except for SST.
+    Tokenization/string cleaning for datasets.
     Original taken from https://github.com/yoonkim/CNN_sentence/blob/master/process_data.py
     """
     string = re.sub(r"[^A-Za-z0-9(),!?\'\`]", " ", string)
@@ -27,7 +27,7 @@ def clean_str(string):
 
 def load_data_and_labels():
     """
-    Loads MR polarity data from files, splits the data into words and generates labels.
+    Loads polarity data from files, splits the data into words and generates labels.
     Returns split sentences and labels.
     """
     # Load data from files
@@ -78,7 +78,7 @@ def build_vocab(sentences):
 
 def build_input_data(sentences, labels, vocabulary):
     """
-    Maps sentencs and labels to vectors based on a vocabulary.
+    Maps sentences and labels to vectors based on a vocabulary.
     """
     x = np.array([[vocabulary[word] for word in sentence] for sentence in sentences])
     y = np.array(labels)
@@ -87,7 +87,7 @@ def build_input_data(sentences, labels, vocabulary):
 
 def load_data():
     """
-    Loads and preprocessed data for the MR dataset.
+    Loads and preprocessed data for the dataset.
     Returns input vectors, labels, vocabulary, and inverse vocabulary.
     """
     # Load and preprocess data
