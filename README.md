@@ -13,4 +13,14 @@ Run the below command and it will run for 100 epochs if you want change it just 
 `python model.py`
 
 # For new data
-you have rebuild the vocabulary and then train 
+you have rebuild the vocabulary and then train.
+
+# For Citation
+@misc{bhaveshoswal,
+  author = {Bhaves Vinod Oswal},
+  title = {CNN-text-classification-keras},
+  year = {2016},
+  publisher = {GitHub},
+  journal = {GitHub repository},
+  howpublished = {\url{https://github.com/bhaveshoswal/CNN-text-classification-keras}},
+}
