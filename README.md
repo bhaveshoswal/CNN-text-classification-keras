@@ -13,7 +13,7 @@ Run the below command and it will run for 100 epochs if you want change it just 
 `python model.py`
 
 # For new data
-you have rebuild the vocabulary and then train.
+You have to rebuild the vocabulary and then train.
 
 # For Citation
 ```
